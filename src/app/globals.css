@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --brand-navy: #161F2C;
+  --brand-navy-light: #253142;
+  --brand-navy-border: #35445A;
+  --brand-gold: #F5A800;
+  --brand-gold-dark: #D98F00;
+  --brand-gold-glow: rgba(245, 168, 0, 0.25);
+  --brand-gold-light: #FFF8EA;
+  --brand-bg-offwhite: #F8FAFC;
+  --brand-card-bg: #FFFFFF;
+  --brand-dark-bg: #0F1621;
+  --brand-dark-card: #1B2433;
+  --brand-text-dark: #0F172A;
+  --brand-text-muted: #64748B;
+  --brand-text-light: #94A3B8;
+  
+  --font-display: 'Space Grotesk', var(--font-geist-sans), sans-serif;
+  --font-sans: 'Plus Jakarta Sans', var(--font-geist-sans), sans-serif;
+}
+
+@theme {
+  --color-brand-navy: #161F2C;
+  --color-brand-navy-light: #253142;
+  --color-brand-navy-border: #35445A;
+  --color-brand-gold: #F5A800;
+  --color-brand-gold-dark: #D98F00;
+  --color-brand-gold-glow: rgba(245, 168, 0, 0.25);
+  --color-brand-gold-light: #FFF8EA;
+  --color-brand-bg: #F8FAFC;
+  --color-brand-card: #FFFFFF;
+  --color-brand-dark-bg: #0F1621;
+  --color-brand-dark-card: #1B2433;
+  
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--brand-bg-offwhite);
+  color: var(--brand-text-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F1621;
+}
+::-webkit-scrollbar-thumb {
+  background: #253142;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A800;
+}
+
+/* Utility Animations & Glassmorphism */
+.glass-nav {
+  background: rgba(22, 31, 44, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-dark {
+  background: rgba(27, 36, 51, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5A800 0%, #FFD066 50%, #F5A800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(245, 168, 0, 0.35);
+}
+
+.gold-glow-sm {
+  box-shadow: 0 0 15px rgba(245, 168, 0, 0.2);
+}
+
+.hero-pattern {
+  background-image: radial-gradient(rgba(245, 168, 0, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
